@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Page 1 -->
+
+<html>
+    <head> 
+        <title>Login Information</title>
+        <!-- CSS -->
+        <style>
+            body {
+                background-color: cornflowerblue;
+            }
+
+            input[type = submit] {
+                background-color: blueviolet;
+                color: wheat;
+                margin-top: 10px;
+                margin-left: 50px;
+            }
+
+            input[type = submit]:hover {
+                background-color: coral;
+            }
+
+            .loginInfo {
+                margin-left: 30px;
+            }
+
+            #username {
+                font-size: 20px
+            }
+
+            #password {
+                font-size: 20px
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Welcome Text -->
+        <h1> Welcome</h1>
+
+        <form name = "loginInformation" method = "get" action = "http://127.0.0.1:5500/lab2_page2.html">
+            <!-- Log In Details -->
+            <div class = "loginInfo">
+                <label for = "username"> username</label>
+                <input type = "text" id = "username" required> 
+            </div>
+            </br>
+
+            <div class = "loginInfo">
+                <label for = "password"> password</label>
+                <input type = "password" id = "password" required> 
+            </div>
+            </br>
+
+            <hr>
+            <input type = "submit" value = "Login">
+        </form>
+    </body>
+</html>
